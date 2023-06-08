@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+  }
+main{
+    font-family: 'Raleway', sans-serif;
+    background-image: url('./img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.form_background{
+    background-image: url('./img/background_form.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 59.4%;
+    min-height: 36.47vw
+
+}
+.form_container{
+    padding: 7.02% ;
+}
+.form_form{
+    max-width: 320px;
+    width: 100%;
+}
+.form_text{
+    max-width: 580px;
+    width: 100%;
+}
+.form_block_flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.form_text_subTitle{
+    margin: 7% 0px;
+    font-family: 'Raleway';
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+.form_text_title>h1{
+    font-size: 2.25rem;
+    font-family: 'Marmelad';
+    font-weight: 400;
+}
+
+.form_img{
+    max-width: 320px;
+    width: 100%;
+}
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 6.25%;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+.form_group_checkbox{
+    display: flex;
+}
+
+input, ::placeholder {
+    font-family: 'Raleway';
+    font-weight: 500;
+}
+.form-label{
+    font-size: 0.875em;
+}
+input[type='password'],input[type='text']{
+    width: 100%;
+    padding: 16px 8px;
+    background: #FFF8E1;
+    border-radius: 6px;
+    border: 0 solid;
+    outline: none;
+    margin: 3% 0 6% 0;
+}
+input[type='password']:hover,input[type='text']:hover{
+    background: #e1eeff;
+}
+
+
+button{
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 1em;
+}
+.form_button_flex{
+    margin-top: 6.25%;
+    display: flex;
+    justify-content: space-between;
+}
+.form_button_back{
+    padding: 5% 12.5%;
+    background: #EDEDED;
+    border-radius: 12px;
+    border: 0px ;
+}
+.form_button_next{
+    padding: 5% 12.5%;
+    background: #FFE182;
+    border-radius: 12px;
+    border: 0px ;
+}
+.form_button_back:hover{
+    background: #9fb1af;
+}
+.form_button_next:hover{
+    background: #d59241;
+}
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: none;
+  }
+  
+ 
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: none;
+  }
+  
+
+  input[type="checkbox"]::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 6px;
+    background-color: #fff;
+    border: 1px solid #999;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  
+ 
+  input[type="checkbox"]:checked::before {
+    content: "";
+    color: #fff;
+    background-image: url('./img/Icon.svg');
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #0E493F;
+    border: 1px solid #0E493F;
+    
+  }
+  
+  
+  input[type="checkbox"]:hover::before {
+    border-color: #0E493F; 
+  }
+  
+  
+  input[type="checkbox"]:focus::before {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  }
+
+.form_group_checkbox{
+    margin-top: 20px;
+}
+.form_group_checkbox>label{
+    font-family: 'PT Sans';
+    font-weight: 400;
+    max-width: 220px;
+}
+
+@media (max-width: 700px){
+    .form_background{
+        width: 95%;
+    }
+    .form_button_flex{
+        flex-direction: column;
+    }
+    .form_button_back{
+        margin-bottom: 10px;
+    }
+    .form_text_title>h1 {
+        font-size: 2rem;
+    }
+}
